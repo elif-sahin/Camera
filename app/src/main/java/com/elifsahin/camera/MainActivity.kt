@@ -36,12 +36,11 @@ class MainActivity : AppCompatActivity() {
         imageView = findViewById(R.id.image_view)
         captureButton = findViewById(R.id.button)
         captureButton.setOnClickListener(View.OnClickListener {
-            if (checkPersmission()) takePicture() else requestPermission()
+            if (checkPermission()) takePicture() else requestPermission()
         })
-
     }
 
-    private fun checkPersmission(): Boolean {
+    private fun checkPermission(): Boolean {
         return (ContextCompat.checkSelfPermission(this, CAMERA) ==
                 PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this,
                 READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED)
