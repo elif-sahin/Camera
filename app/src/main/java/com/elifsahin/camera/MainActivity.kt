@@ -23,7 +23,7 @@ import java.io.IOException
 import java.text.SimpleDateFormat
 import java.util.*
 
-//adsadsadas
+//adsadsadasjbjjkjhkjıjı
 class MainActivity : AppCompatActivity() {
     private var mCurrentPhotoPath: String?=null
     private lateinit var imageView: ImageView
